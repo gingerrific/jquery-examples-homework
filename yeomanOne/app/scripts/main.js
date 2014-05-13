@@ -1,20 +1,13 @@
+"use strict";
+
 // 15 different jquery methods
 // using .click() to trigger each method for a demo
-// 1 - .hover() & .animate()
+// 1 - .addClass()
 
+$('.button-one').click(function (){
+	$('.example-one').find('li').toggleClass('swipe-box');
+});
 
-// var swipeStyles = {"right": "88px","z-index": "5"};
-
-// $('.swipe-box:before').hover(function() {
-// 	$(this).stop().animate(.css(swipeStyles){duration:500})
-// })
-
-// $('.swipe-box:before').hover(function() {
-//   	$('.swipe-box:before').animate({
-// 	    'right': '88px',
-// 	    'z-index': '5';
-//   	}, 5000,);
-// });
 	
 // 2 - 
 // 3 - 
