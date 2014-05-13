@@ -1,0 +1,105 @@
+// bower:scss
+// endbower
+
+
+
+///// General Selectors ////////////////////////////
+////////////////////////////////////////////////////
+body {
+    font-family: "Helvetica Neue";
+}
+
+.example {
+    position: relative;
+    height: 350px;
+    width: 500px;
+    border: 1px solid black;
+    margin: 20px auto;
+}
+
+.example-box {
+    height: 200px;
+    width: 450px;
+    outline: 1px solid red;
+    margin: 75px auto;
+}
+
+.button {
+    position: absolute;
+    height: 35px;
+    width: 65px;
+    right: 15px;
+    line-height: 35px;
+    margin-top: 5px;
+    padding: 3px;
+    text-align: center;
+    border: 1px solid black;
+}
+
+///// General Selectors ////////////////////////////
+////////////////////////////////////////////////////
+
+//// Example One //////////////////////////////////
+//// .hover() & .animate() ////////////////////////
+
+.example-one ul {
+    list-style: none;
+    position: relative;
+
+    & li {
+        position: relative;
+        display: inline-block;
+        padding: 5px 10px;
+        margin: 77px auto;
+        height: 30px;
+        width: 66px;
+        transition: all .5s .1s linear;
+        outline: 1px solid #797A7C;
+        text-align: center;
+        line-height: 30px;
+        background: #1DAEEC;
+        overflow: hidden;
+    }
+
+
+    & li:before, & li:after {
+        position: absolute;
+        content: " ";
+        top:0;
+        right: -41px;
+        border-style: solid;
+        z-index: -1;
+        transition: all .6s linear;
+    }
+
+    & li:before {
+        border-width: 40px 0 0 40px;
+        border-color: transparent transparent transparent #1DAEEC;
+    }
+
+    & li:after {
+        border-width: 0 40px 40px 0;
+        border-color: transparent #D39D27 transparent transparent;
+    }
+
+    & li:hover {
+        background: #D39D27;
+    }
+
+    & li:hover:before, & li:hover:after {
+        right: 88px;
+        z-index: 5;
+    }
+}
+
+
+// .demo {
+//     position: absolute;
+//         top:0;
+//         width: 0;
+//         height: 0;
+//         border-style: solid;
+//         border-width: 0 33px 33px 0;
+//         border-color: transparent #0d38d2 transparent transparent;
+
+// }
