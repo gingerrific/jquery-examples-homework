@@ -15,18 +15,20 @@
         <!-- build:css(.tmp) styles/main.css -->
         <link rel="stylesheet" href="styles/main.css">
         <!-- endbuild -->
+
+        <link href='http://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css'>
     </head>
     <body>
         <!--[if lt IE 10]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-    <!-- Example 1 - hover/animate -->
+    <!-- Example 1 - toggleClass() -->
     <div class="example">
-        <div class="example-one-header">
+        <div class="example-header">
             <h1>.toggleClass()</h1>
         </div>
-        <div class="example-box example-one">
+        <div class="example-box toggle-class-example">
             <ul>
                 <li>Home</li>
                 <li>About</li>
@@ -34,18 +36,60 @@
                 <li>Hours</li>
             </ul>
         </div>
-        <div class="example-one-text">
+        <div class="example-description-text">
             The .toggleClass() method will take one element and allow you to pass one or more class names as a parameter. If the element currently has the class being passed, it will instead remove it (and vice-versa.) Its effects are very similar to addClass(), however with the inclusion of a .click() method you may toggle the element back to it's original class.
         </div>
-        <div class="button button-one">Demo</div>
+        <div class="button toggle-class-button">Demo</div>
     </div>
 
+
+<!-- Example 2 - .hide() & .show() -->
+
+    <div class="example">
+        <div class="example-header">
+            <h1>.hide()</h1>
+        </div>
+        <div class="example-box hide-example">
+            <div class="circle circle-one"></div>
+            <div class="circle circle-two"></div>
+            <div class="circle circle-three"></div>
+        </div>
+        <div class="example-description-text">
+            The .hide() method will cause the targeted element to simultaneously move towards a height, width and opacity of 0. A duration, easing and other properties may also be provided (start, complete, etc). .show() will perform much the opposite and restore an element. Click "Demo" to start and click each circle to .hide(). Click "Demo" to .show() the elements. 
+        </div>
+        <div class="button hide-example-button">Demo</div>
+    </div>
+
+<!-- Example 3 - .clone() .first() .prependTo() -->
+
+    <div class="example">
+        <div class="example-header">
+            <h1>.clone() .first() .prependTo()</h1>
+        </div>
+        <div class="example-box clone-example">
+            <div class="boxxy-box box-one"></div>
+            <div class="boxxy-box box-two"></div>
+            <div class="boxxy-box box-three"></div>
+            <div class="boxxy-box box-four"></div>
+            <div class="boxxy-box box-five"></div>
+            <div class="purple-button">$purple</div>
+            <div class="pink-button">$pink</div>
+        </div>
+        <div class="example-description-text">
+        </div>
+        <div class="button clone-example-button">Demo</div>
+    </div>
 
 <!-- Example - -->
 
     <div class="example">
+        <div class="example-header">
+            <h1></h1>
+        </div>
         <div class="example-box">
 
+        </div>
+        <div class="example-description-text">
         </div>
         <div class="button">Demo</div>
     </div>
@@ -53,8 +97,13 @@
 <!-- Example - -->
 
     <div class="example">
+        <div class="example-header">
+            <h1></h1>
+        </div>
         <div class="example-box">
 
+        </div>
+        <div class="example-description-text">
         </div>
         <div class="button">Demo</div>
     </div>
@@ -62,8 +111,13 @@
 <!-- Example - -->
 
     <div class="example">
+        <div class="example-header">
+            <h1></h1>
+        </div>
         <div class="example-box">
 
+        </div>
+        <div class="example-description-text">
         </div>
         <div class="button">Demo</div>
     </div>
@@ -71,8 +125,13 @@
 <!-- Example - -->
 
     <div class="example">
+        <div class="example-header">
+            <h1></h1>
+        </div>
         <div class="example-box">
 
+        </div>
+        <div class="example-description-text">
         </div>
         <div class="button">Demo</div>
     </div>
@@ -80,8 +139,13 @@
 <!-- Example - -->
 
     <div class="example">
+        <div class="example-header">
+            <h1></h1>
+        </div>
         <div class="example-box">
 
+        </div>
+        <div class="example-description-text">
         </div>
         <div class="button">Demo</div>
     </div>
@@ -89,8 +153,13 @@
 <!-- Example - -->
 
     <div class="example">
+        <div class="example-header">
+            <h1></h1>
+        </div>
         <div class="example-box">
 
+        </div>
+        <div class="example-description-text">
         </div>
         <div class="button">Demo</div>
     </div>
@@ -98,8 +167,13 @@
 <!-- Example - -->
 
     <div class="example">
+        <div class="example-header">
+            <h1></h1>
+        </div>
         <div class="example-box">
 
+        </div>
+        <div class="example-description-text">
         </div>
         <div class="button">Demo</div>
     </div>
@@ -107,8 +181,13 @@
 <!-- Example - -->
 
     <div class="example">
+        <div class="example-header">
+            <h1></h1>
+        </div>
         <div class="example-box">
 
+        </div>
+        <div class="example-description-text">
         </div>
         <div class="button">Demo</div>
     </div>
@@ -116,8 +195,13 @@
 <!-- Example - -->
 
     <div class="example">
+        <div class="example-header">
+            <h1></h1>
+        </div>
         <div class="example-box">
 
+        </div>
+        <div class="example-description-text">
         </div>
         <div class="button">Demo</div>
     </div>
@@ -125,8 +209,13 @@
 <!-- Example - -->
 
     <div class="example">
+        <div class="example-header">
+            <h1></h1>
+        </div>
         <div class="example-box">
 
+        </div>
+        <div class="example-description-text">
         </div>
         <div class="button">Demo</div>
     </div>
@@ -134,8 +223,13 @@
 <!-- Example - -->
 
     <div class="example">
+        <div class="example-header">
+            <h1></h1>
+        </div>
         <div class="example-box">
 
+        </div>
+        <div class="example-description-text">
         </div>
         <div class="button">Demo</div>
     </div>
@@ -143,26 +237,13 @@
 <!-- Example - -->
 
     <div class="example">
+        <div class="example-header">
+            <h1></h1>
+        </div>
         <div class="example-box">
 
         </div>
-        <div class="button">Demo</div>
-    </div>
-
-<!-- Example - -->
-
-    <div class="example">
-        <div class="example-box">
-
-        </div>
-        <div class="button">Demo</div>
-    </div>
-
-<!-- Example - -->
-
-    <div class="example">
-        <div class="example-box">
-
+        <div class="example-description-text">
         </div>
         <div class="button"></div>
     </div>

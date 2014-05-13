@@ -1,29 +1,49 @@
 // bower:scss
 // endbower
 
-
-
+///// Colors ////////////////////////////
+////////////////////////////////////////////////////
+$gold: #D39D27;
+$light-blue: #1DAEEC;
+$green: #5FF756;
+$magenta: #D2359B;
+$orange: #FF7947;
+$gray: #797A7C;
+$off-white: #F6F6F6;
+$purple: #8F40E8;
+$pink: #FF2B67;
 ///// General Selectors ////////////////////////////
 ////////////////////////////////////////////////////
 body {
-    font-family: "Helvetica Neue";
+    font-family: "Muli", "Helvetica Neue", sans-serif;
 }
 
+// General spacing div to hold example, name, text and button
 .example {
     position: relative;
     height: 450px;
     width: 85%;
     border: 1px solid black;
     margin: 20px auto;
-}
+    background: $off-white;
 
+}
+// Inner div to hold example
 .example-box {
     height: 200px;
     width: 75%;
-    outline: 1px solid red;
+    outline: 1px solid $gray;
     margin: 60px auto 20px;
+    position: relative;
+    background: $gray;
 }
-
+// Header text inside of each example.
+.example-header {
+    position: absolute;
+    left: 5px;
+    top: -10px;
+}
+// The "demo" toggle/button
 .button {
     position: absolute;
     right: 25px;
@@ -38,19 +58,23 @@ body {
     outline: 1px solid black;
 }
 
-///// General Selectors ////////////////////////////
-////////////////////////////////////////////////////
+// Styles the div containing the explaination text
+.example-description-text {
+    height: 80px;
+    width: 90%;
+    margin: 0 auto;
+}
 
 //// Example One //////////////////////////////////
-//// .hover() & .animate() ////////////////////////
+//// .toggleClass() ///////////////////////////////
 
-.example-one ul {
+.toggle-class-example ul {
     list-style: none;
     position: relative;
     margin: 0 auto;
     padding:0;
     margin-left: 24%;
-
+    // Initially hidden class that will be added to the li elements to give them style
     & .swipe-box {
         position: relative;
         display: inline-block;
@@ -59,13 +83,13 @@ body {
         height: 30px;
         width: 66px;
         transition: all .5s .1s linear;
-        outline: 1px solid #797A7C;
+        outline: 1px solid $gray;
         text-align: center;
         line-height: 30px;
-        background: #1DAEEC;
+        background: $light-blue;
         overflow: hidden;
     }
-
+    // General pseudo triangle properties
     & .swipe-box:before, & .swipe-box:after {
         position: absolute;
         content: " ";
@@ -75,47 +99,107 @@ body {
         z-index: -1;
         transition: all .6s linear;
     }
-
+    // First bottom triangle
     & .swipe-box:before {
         border-width: 40px 0 0 40px;
         border-color: transparent transparent transparent #1DAEEC;
     }
-
+    // Second "top" triangle
     & .swipe-box:after {
         border-width: 0 40px 40px 0;
-        border-color: transparent #D39D27 transparent transparent;
+        border-color: transparent $gold transparent transparent;
     }
-
+    // Changes the button background to orange
     & .swipe-box:hover {
-        background: #D39D27;
+        background: $gold;
     }
-
+    // Moves both triagles to the "left" and moves them in front
     & .swipe-box:hover:before, & .swipe-box:hover:after {
         right: 88px;
         z-index: 5;
     }
 }
 
-.example-one-header {
-    position: absolute;
-    left: 5px;
-    top: -10px;
+//// Example Two //////////////////////////////////
+//// .hide() & .show() ////////////////////////////
+
+.hide-example {
+    text-align: center;
 }
 
-.example-one-text {
+// Standard circle element
+.circle {
+    display: inline-block;
     height: 80px;
-    width: 90%;
-    margin: 0 auto;
-
+    width: 80px;
+    border-radius: 50%;
+    margin: 60px auto;
+}
+// Different colored circles and positions
+.circle-one {
+    position: absolute;
+    left: 22%;
+    background: $green;    
 }
 
-// .demo {
-//     position: absolute;
-//         top:0;
-//         width: 0;
-//         height: 0;
-//         border-style: solid;
-//         border-width: 0 33px 33px 0;
-//         border-color: transparent #0d38d2 transparent transparent;
+.circle-two {
+    position: absolute;
+    left: 44%;
+    background: $magenta;
+}
 
-// }
+.circle-three {
+    position: absolute;
+    left: 66%;
+    background: $orange;
+}
+
+//// Example Three /////////////////////////////////
+//// .clone() //////////////////////////////////////
+
+.clone-example {
+    overflow: hidden;
+}
+
+.boxxy-box {
+    height: 40px;
+    width: 40px;
+    display: inline-block;
+    background: $purple;
+    float: left;
+    margin: 30px 35px 15px 10px;
+    box-shadow:         0   1px 0 .5px darken($purple, 25%),
+                inset   1px 1px 0 .5px darken($purple, 10%);
+}
+
+
+.box-two, .box-four {
+    background: $pink;
+    box-shadow:         -1px   1px 0 .5px darken($pink, 25%),
+                inset    1px   1px 0 .5px darken($pink, 10%);
+}
+
+.purple-button, .pink-button {
+    height: 30px;
+    width: 75px;
+    position: absolute;
+    bottom: 5px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.purple-button {
+    left: 25%;
+    background: $purple;
+    box-shadow:         -1px   1px 0 .5px darken($purple, 15%),
+                inset   0      0   0  1px darken($purple, 5%);
+}
+
+.pink-button {
+    right: 25%;
+    background: $pink;
+    box-shadow:         -1px   1px 0 .5px darken($pink, 25%),
+                inset    0     0   0 1px darken($pink, 10%);
+}
