@@ -63,6 +63,7 @@ $('.on-example-button').click(function (){
 //// Example Five /////////////////////////////////
 //// .animate() ///////////////////////////////////
 
+// 4 buttons that move the tied element 20px the corresponding directions
 $('.animation-example-button').click(function (){
 	$('.up-button').click(function() {
 		$( ".animated-box" ).animate({ 'top': '-=20px' }, "fast" );
@@ -82,6 +83,7 @@ $('.animation-example-button').click(function (){
 //// Example Six //////////////////////////////////
 //// mousemove .text() event.pageX/Y //////////////
 
+// mouse tracking and reporting
 $('.mouse-location-button').click(function (){
 	$('.example-box').on( 'mousemove', function( event ) {
 		$('.mouse-reporter-one').text( "Offset from the left of the page: " + event.pageX);
@@ -90,11 +92,38 @@ $('.mouse-location-button').click(function (){
 });
 
 //// Example Seven ////////////////////////////////
-//// .animate() ///////////////////////////////////
+//// .slideUp() .delay() //////////////////////////
+
+$('.slide-up-example-button').click(function (){
+	$('.top-slide-up').toggle().delay(200).slideUp();
+	$('.bottom-slide-up').toggle().delay(800).slideUp();
+});
 
 
-// 8 - 
-// 9 - 
+//// Example Eight ////////////////////////////////
+//// .fadeIn() ////////////////////////////////////
+
+$('.fade-in-example-button').click(function (){
+	$('.fade-in-second').delay(200).fadeIn(800);
+});
+
+
+//// Example Nine /////////////////////////////////
+//// .scroll() ////////////////////////////////////
+
+
+// upon link click, window will scroll back to top
+$('.scroll-example-button').click(function (){
+	$('.scroll-to-top-link').click(function (event) {
+		event.preventDefault();
+		$('.scroll-box').animate({ // affected div is the container
+			scrollTop: 0 //scroll top of container. Could also return contains offset postion: $('.scroll-box').offset() == 0
+		}, 1000); // animation duration
+	});
+});
+
+
+
 // 10 - 
 // 11 - 
 // 12 - 

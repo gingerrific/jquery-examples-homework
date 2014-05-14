@@ -12,6 +12,7 @@ $gray: #797A7C;
 $off-white: #F6F6F6;
 $purple: #8F40E8;
 $pink: #FF2B67;
+$yellow: #F6E766;
 ///// General Selectors ////////////////////////////
 ////////////////////////////////////////////////////
 body {
@@ -279,4 +280,69 @@ body {
 }
 
 //// Example Seven ////////////////////////////////
-//// .animate() ///////////////////////////////////
+//// .slideUp() .delay() //////////////////////////
+
+// two box divs
+.top-slide-up, .bottom-slide-up {
+    height: 80px;
+    width: 80px;
+    position: absolute;
+    display: none;
+}
+
+// position and styling for the top element
+.top-slide-up {
+    background: $magenta;
+    top: 0;
+    left: 25%;
+}
+// position and styling for the bottom element
+.bottom-slide-up {
+    background: $yellow;
+    bottom: 0;
+    right: 25%;
+}
+
+//// Example Eight ////////////////////////////////
+//// .fadeIn() ////////////////////////////////////
+
+// first div that contains the intial image style 
+.fade-in-example {
+    background: url(http://www.tailslate.net/wp-content/uploads/2004/09/Star_Wars_A_New_Hope_Han_Solo_Greedo_shoots_first.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+// second div that fades in styles and display
+.fade-in-second {
+    display: none;
+    background: url(http://fc06.deviantart.net/fs71/i/2013/320/f/a/han_shot_first_wallpaper_by_pansejra-d6ui2ts.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 200px;
+    height: 100%;
+    width: 100%;
+}
+
+//// Example Nine /////////////////////////////////
+//// .scroll() ////////////////////////////////////
+
+// creates gray div box with scroll bar
+.scroll-box {
+    overflow: auto;
+    background: $gray scroll;
+}
+// creates text box that is way bigger than the div to force a scroll bar
+.scroll-example-box {
+    width: 700px;
+    height: 700px;
+    font-size: 40px;
+    color: #fff;
+}
+// positions links text at the bottom of scrollable text
+.scroll-to-top-link {
+    position: absolute;
+    height: 100%;
+    right: 0;
+    color: $pink;
+}
