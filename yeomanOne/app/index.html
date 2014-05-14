@@ -64,34 +64,72 @@
 
     <div class="example">
         <div class="example-header">
-            <h1>.clone() .first() .prependTo()</h1>
+            <h1>.clone() .first() .prependTo() .replaceWith()</h1>
         </div>
         <div class="example-box clone-example">
             <div class="boxxy-box box-one"></div>
             <div class="boxxy-box box-two"></div>
-            <div class="boxxy-box box-three"></div>
-            <div class="boxxy-box box-four"></div>
-            <div class="boxxy-box box-five"></div>
+            <div class="boxxy-box box-one"></div>
+            <div class="boxxy-box box-two"></div>
+            <div class="boxxy-box box-one"></div>
             <div class="purple-button">$purple</div>
             <div class="pink-button">$pink</div>
         </div>
         <div class="example-description-text">
+            The .clone() method will allow you to directly copy an element (including desendants). When used with .prepend or .append it allows for an exact copy of another element to be added to another element. The clones properties may also be altered prior to addition. .first() selects only the first element, however as this is a prepend, the added element is always the most recent. Click "Demo" to start, then select which color box you'd like to add. Double-click to reset.
         </div>
         <div class="button clone-example-button">Demo</div>
     </div>
 
-<!-- Example - -->
+<!-- Example 4 - .on() mouseenter mouseleave -->
 
     <div class="example">
         <div class="example-header">
-            <h1></h1>
+            <h1>.on() mouseenter mouseleave</h1>
         </div>
-        <div class="example-box">
-
+        <div class="example-box on-box">
+            <div class="on-inner-box">
+            </div>
         </div>
         <div class="example-description-text">
+            The .on() method attaches an event to the elements selected. .on() will accept event, selector, data and a function/handler to return when the event occurs. Click "Demo" and move your mouse in and out of the orange box.
         </div>
-        <div class="button">Demo</div>
+        <div class="button on-example-button">Demo</div>
+    </div>
+
+<!-- Example 5 - .animate() -->
+
+    <div class="example">
+        <div class="example-header">
+            <h1>.animate()</h1>
+        </div>
+        <div class="example-box animate-example">
+            <div class="animated-box"></div>
+            <div class="up-button">&uarr;</div>
+            <div class="down-button">&darr;</div>
+            <div class="right-button">&rarr;</div>
+            <div class="left-button">&larr;</div>
+        </div>
+        <div class="example-description-text">
+            The .animate() method creates jquery animations on CSS properties. The jqeury .animate() is more restricte than the CSS alternative, however animation can be tied to relative properties and tied to events. Click "Demo" to start moving the object with the controller.
+        </div>
+        <div class="button animation-example-button">Demo</div>
+    </div>
+
+<!-- Example 6 - mousemove .text() event.pageX/Y  -->
+
+    <div class="example">
+        <div class="example-header">
+            <h1>mousemove .text() event.pageX/Y </h1>
+        </div>
+        <div class="example-box mouse-location-example">
+            <div class="mouse-reporter-one"></div>
+            <div class="mouse-reporter-two"></div>
+        </div>
+        <div class="example-description-text">
+            The mousemove event may be bound to an event hanlder such as event.pageX/Y which will report the mouse movement relative to the top-left corner of the document (including scrolling). .text() when empty will retrive the text content of the connected element, but may also be used to pass in new text conent to the connected element. Click "Demo" and move your mouse cursor with in the dark gray box. 
+        </div>
+        <div class="button mouse-location-button">Demo</div>
     </div>
 
 <!-- Example - -->
@@ -218,34 +256,6 @@
         <div class="example-description-text">
         </div>
         <div class="button">Demo</div>
-    </div>
-
-<!-- Example - -->
-
-    <div class="example">
-        <div class="example-header">
-            <h1></h1>
-        </div>
-        <div class="example-box">
-
-        </div>
-        <div class="example-description-text">
-        </div>
-        <div class="button">Demo</div>
-    </div>
-
-<!-- Example - -->
-
-    <div class="example">
-        <div class="example-header">
-            <h1></h1>
-        </div>
-        <div class="example-box">
-
-        </div>
-        <div class="example-description-text">
-        </div>
-        <div class="button"></div>
     </div>
 
 
