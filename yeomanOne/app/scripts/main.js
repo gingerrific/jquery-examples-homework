@@ -104,7 +104,7 @@ $('.slide-up-example-button').click(function (){
 //// .fadeIn() ////////////////////////////////////
 
 $('.fade-in-example-button').click(function (){
-	$('.fade-in-second').delay(200).fadeIn(800);
+	$('.fade-in-second').delay(200).fadeToggle(800);
 });
 
 
